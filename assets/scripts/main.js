@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function showNewsletterSubscriptionMessage() {
-
+        
     }
 
     let newsletterForm = document.getElementById("newsletter-form");
@@ -92,8 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             submitButton.disabled = true;
             return;
         }
-        
-        console.log("submitted");
+    
         showNewsletterSubscriptionMessage();
     })
 
