@@ -58,8 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
         errorElement.remove();
     }
 
-    function showNewsletterSubscriptionMessage() {
-        
+    function showNewsletterSubscriptionMessage(form) {
+        let successMessage = document.createElement("div");
+        successMessage.innerText = "Thank you for subscribing!";
+        form.replaceWith(successMessage);
     }
 
     let newsletterForm = document.getElementById("newsletter-form");
@@ -93,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
     
-        showNewsletterSubscriptionMessage();
+        showNewsletterSubscriptionMessage(newsletterForm);
     })
 
     emailInput.addEventListener("change", function (e) {
