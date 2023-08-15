@@ -1,6 +1,3 @@
-# Site URL
-http://manage-landing-page-master.local
-
 # Front-end Style Guide
 
 ## Layout
